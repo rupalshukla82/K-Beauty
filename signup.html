@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h2 {
+            text-align: center;
+            margin-top: 6vh;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        form {
+            width: 40%;
+            margin: auto;
+            margin-top: 6vh;
+        }
+
+        .form-control {
+            padding: 1.3vw;
+            border-radius: 2vw;
+            margin-top: 2vh;
+        }
+
+        label {
+            margin-top: 1vh;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 2vh;
+            padding: 0.8vw;
+            border-radius: 1vw;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Sign up to K-Beauty</h2>
+    <form id="signupform" method="POST" name="signup" data-netlify="true">
+        <label for="Fname">Name</label>
+        <input type="text" class="form-control" id="Fname" name="Fname"  required>
+
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username"  required>
+
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+
+        <label for="cpassword">Confirm Password</label>
+        <input type="text" class="form-control" id="cpassword" name="cpassword"  required>
+
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+
+        <p id="success-message" style="display: none; color: green;">Signup successful! Redirecting...</p>
+    </form>
+
+    <script>
+      
+            $("#signupform").submit(function (event) {
+                event.preventDefault(); // 
+
+                let Fname = $("#Fname").val().trim();
+                let username = $("#username").val().trim();
+                let password = $("#password").val().trim();
+                let cpassword = $("#cpassword").val().trim();
+                let email = $("#email").val().trim();
+
+                let fnamePattern = /^[A-Za-z]{3,30}$/;
+                let usernamePattern = /^(?=.*[a-zA-Z])[a-zA-Z0-9#@%&*()_-]{5,20}$/;
+                let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                let passwordPattern = /^(?=.*[a-zA-Z])[a-zA-Z0-9#@%&*()_-]{8,20}$/;
+
+                if (!fnamePattern.test(Fname)) {
+                    alert("Enter a valid Firstname");
+                    return;
+                }
+                if (!usernamePattern.test(username)) {
+                    alert("Enter a valid username");
+                    return;
+                }
+                if (!emailPattern.test(email)) {
+                    alert("Enter a valid Email address");
+                    return;
+                }
+                if (!passwordPattern.test(password)) {
+                    alert("Enter a valid password");
+                    return;
+                }
+                if (password !== cpassword) {
+                    alert("Passwords do not match");
+                    return;
+                }
+
+                
+                alert("you are registered successfully");
+
+                setTimeout(() => {
+                event.target.submit(); 
+                window.location.href = "login.html"; 
+            }, 2000);         
+        
+        });
+     
+    </script>
+
+</body>
+
+</html>

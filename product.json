@@ -1,0 +1,148 @@
+{
+    "employee":
+    [
+        {
+            "name" :"Liquid Herbal Body Wash",
+            "price" : "₹60.00",
+            "image" : "D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/f6.jpg"
+        },
+
+        {
+            "name":"Simple Refreshing Facewash",
+            "price":"₹300.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/f3.jpg"
+        },
+
+        {
+            "name":"Pimple clearing Facewash",
+            "price":"₹90.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/f5.jpg"
+        },
+
+        {
+            "name":"Pond's Detox Facewash",
+            "price":"₹103.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/f4.jpg"
+        },
+
+        {
+            "name":"PATRICK TA Major Dimension Eyeshadow Palette",
+            "price":"₹8050.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/e1.jpg"
+        },
+
+        {
+            "name":"H2o Proof Eyeliner Pen",
+            "price":"₹608.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/k2.jpg"
+        },
+
+        {
+            "name":"Eye Shadow X 9 Palette",
+            "price":"₹4250.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/e4.jpg"
+        },
+
+        {
+            "name":"Essence Make Me Brow Eyebrow Gel Mascara 04 Ashy Brows - 3.8 ml",
+            "price":"₹306.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/mas1.jpg"
+        },
+
+        {
+            "name":"Cream Glide Lip Liner",
+            "price":"₹278.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/li1.jpg"
+        },
+
+        {
+            "name":"Lip Soufflé Matte Lip Cream",
+            "price": "₹2400.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/lp2.jpg"
+        },
+
+        {
+            "name":"Mineral Fusion Lip Liner Pencil, Burnish 0.04 Ounce",
+            "price": "₹7873.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/li4.jpg"
+        },
+
+        {
+            "name":"Kind Words Matte Lipstick",
+            "price": "₹2400.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/lp13.jpg"
+        },
+
+        {
+            "name":"Portable Retractable Makeup Brush Large Powder Brush",
+            "price": " ₹1768.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/br3.jpg"
+        },
+
+        {
+            "name":"Make Me Blush - Bold Blurring Blush",
+            "price": "₹5270.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/b3.jpg"
+        },
+
+        {
+            "name":"Camo Liquid Blush, Long-lasting Liquid Blush",
+            "price": "₹950.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/b2.jpg"
+        },
+
+        {
+            "name":"OnTheGlow Blush ",
+            "price":" ₹1950.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/b13.jpg"
+        },
+
+        {
+            "name":"Black Shine Shampoo",
+            "price":" ₹131.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/s1.jpg"
+        },
+
+        {
+            "name":"Shu Uemura Ultimate Reset Extreme Duo Serum ",
+            "price":"₹3389.87",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/si4.jpg"
+        },
+
+        {
+            "name":"VEGAMOUR GRO Hair Serum",
+            "price":"₹11220.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/si6.jpg"
+        },
+
+        {
+            "name":"L'Oreal Shampoo Elvive Total Repair 5 Repairing 12.6 Ounce",
+            "price":"₹5057.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/s6.jpg"
+        },
+
+        {
+            "name":"Brighten Up Toner",
+            "price":"₹839.71",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/t1.jpg"
+        },
+
+        {
+            "name":"Kids Multi-Vitamin Face Cream Melon Juice ",
+            "price":" ₹863.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/m8.jpg"
+        },
+
+        {
+            "name":"Rose Quartz Antioxidant Collagen Face Mask",
+            "price":"₹11200.00",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/ms7.jpg"
+        },
+
+        {
+            "name":"L'Oreal Paris Infallible Pro-Glow Foundation",
+            "price":"₹1770",
+            "image":"D:/WD-2/jquery.min.js_3.5.1/cdnjs/wd-journal/mu11.jpg"
+        }
+    ]
+}

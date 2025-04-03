@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="cart.js" defer></script> -->
+     <script src="jquery.min.js"></script>
+    <style>
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: rgb(219, 167, 167);
+            text-align: center;
+        }
+
+        img {
+            height: 22rem;
+            width: 17rem;
+            border-radius: 2vw;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 1vw;
+            text-decoration: underline;
+        }
+
+        button {
+            margin-top: 2em;
+            width: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Shopping Cart</h2>
+    <!-- Product details will be dynamically inserted here -->
+    <div id="product-details" style="font-size: 20px; font-weight: bold; font-family: 'Times New Roman', Times, serif;"></div>
+    <button class="btn btn-lg btn-primary" id="btns">Place the Order</button>
+</body>
+
+<script>
+    window.onload = function () {
+        // Retrieve product details from local storage
+        const productTitle = localStorage.getItem("productTitle");
+        const productPrice = localStorage.getItem("productPrice");
+        const productImage = localStorage.getItem("productImage");
+
+        // Check if the product details exist
+        if (productTitle && productPrice && productImage) {
+            // Dynamically populate the product details
+            const productDetailsDiv = document.querySelector("#product-details");
+            productDetailsDiv.innerHTML = `
+                <h2>${productTitle}</h2>
+                <img src="${productImage}" alt="${productTitle}">
+                <p>${productPrice}</p>
+            `;
+        } else {
+            // If no product details are found, show an error message
+            document.querySelector("#product-details").innerHTML = "<p>No product details found. Please add a product first.</p>";
+        }
+        $("#btns").click(function(){
+            alert("Thank You For chossing us Continue shooping  :)");
+            window.location.href="Q5.html";
+        });
+    };
+   
+   
+   
+    
+</script>
+
+</html>

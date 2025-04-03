@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <style>
+           h1{
+        text-align: center;
+        margin-top: 8vh;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    form{
+        width: 40%;
+        margin: auto;
+        margin-top:6vh ;
+    }  
+    .form-control{
+        padding: 1.5vw;
+        border-radius: 2vw; 
+        &:hover{
+            border-color: #007bff;
+        }
+    }
+    label{
+        margin-top: 3vh;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .btn{
+        margin-top: 3.5vh;
+        padding: 1vw 3vw;
+        border-radius: 2vw;
+        font-weight: bold;
+        &:hover{
+            border-color: black;
+          
+        }
+    }
+    p{
+        color: black;
+        font-size: 20px;
+        margin-top: 4vh;
+        padding: 1vw 3vw;
+        text-align: center;
+    }
+ 
+
+    </style>
+</head>
+<body>
+    <h1>Sign in to K-Beauty</h1>
+
+    <form id="loginform" name="login" method="POST" data-netlify="true" onsubmit="return validateForm(event)">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your Username"  required>
+
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your Password" required>
+
+        <label for="captcha">Captcha</label>
+        <input type="text" class="form-control" id="captcha" name="captcha" placeholder="Enter the given captcha below" required>
+        
+        <label id="generated-captcha" class="font-weight-bold"></label> 
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        <p>If you don't have an account, please <a href="signup.html">Sign up</a></p>
+        
+
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            generateCaptcha();
+        });
+    
+        function generateCaptcha() {
+            let randomCaptcha = Math.random().toString(30).slice(2, 8);
+            $("#generated-captcha").text(randomCaptcha);
+        }
+    
+        $("#loginform").submit(function (event) {
+            event.preventDefault(); 
+    
+            let username = $("#username").val().trim();
+            let password = $("#password").val().trim();
+            let userCaptcha = $("#captcha").val().trim();
+            let actualCaptcha = $("#generated-captcha").text().trim();
+    
+            let unamePattern = /^(?=.*[a-zA-Z])[a-zA-Z0-9#@%&*()_-]{5,20}$/;
+            let passwordPattern = /^(?=.*[a-zA-Z])[a-zA-Z0-9#@%&*()_-]{8,20}$/;
+    
+            if (!unamePattern.test(username)) {
+                alert("Please enter a valid username.");
+                return;
+            }
+            if (!passwordPattern.test(password)) {
+                alert("Please enter a valid password.");
+                return;
+            }
+            if (userCaptcha !== actualCaptcha) {
+                alert("Captcha does not match.");
+                return;
+            }
+    
+            alert("Login successful! Redirecting...");
+          
+            setTimeout(() => {
+                event.target.submit(); 
+                window.location.href = "index.html"; 
+            }, 2000);
+        });
+    </script>
+
+    
+</body>
+</html>

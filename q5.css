@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+span {
+    color: rgb(238, 49, 143);
+    /* background-color: rgba(63, 12, 12, 0.371); */
+}
+
+header {
+    background-color: rgb(51, 20, 20);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Navbar Layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Title */
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(209, 6, 107, 0.87);
+}
+
+/* Cart Icon */
+.cart-icon i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Fix Responsive Issues */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    ul li {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+.footer {
+    display: flex;
+    background-color: rgb(51, 20, 20);
+    color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h4 {
+    border-bottom: 2px solid rgb(238, 49, 143);
+    padding: 0.2vw;
+
+}
+
+.info {
+    padding: 4vw;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.nav-item {
+    &:hover {
+        padding: 2px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.navs {
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+
+}
+
+.card {
+    margin: 20px;
+    width: 18rem;
+    height: 28rem;
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+.card-title{
+    font-size: 17px;
+}
+
+.card-group {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card-img-top {
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 18px;
+    &:hover{
+        transform: scaleX(-1);
+    }
+}
+footer{
+    margin-top: 5vh;
+}
+#icon{
+    color: white;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    color: rgba(104, 13, 58, 0.829);
+    margin-top: 1vh;
+    font-family: 'Times New Roman', Times, serif ;
+    text-decoration: underline;
+
+}
+.btn-dark{
+
+    padding: 1vw;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+  
+}
+#Eyes,#Lips,#Hairs,#skin_care,#brush{
+    margin-top: 5vh;
+}   
+
+    
+
+    
+
+    
