@@ -66,7 +66,7 @@ Navigate into the project folder:
 🖼 Screenshots
 
 Here are some previews of the website:
-<img src="/mnt/data/5704c333-5dc7-41e7-8f5c-ce4d0e81ae27.png" width="400"> <img src="/mnt/data/1ce3bf98-9801-4e5c-befa-2924786226a9.png" width="400">
+<img src="/assets/Home.png" width="400"> <img src="/assests/Login.png" width="400">
 📚 Lessons Learned
 
     Learned how to build a full responsive layout using Bootstrap.
