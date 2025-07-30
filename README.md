@@ -18,7 +18,7 @@
 
     Lessons Learned
 
-✨ Features
+## ✨ Features
 
     🛍️ Product Listings: Displays a variety of Korean beauty products.
 
@@ -37,7 +37,7 @@
  -  Live Demo : 🔗 https://k-beautys.netlify.app/
  -  Solution URL : 🔗 https://github.com/rupalshukla82/K-Beauty
 
-🛠 Technologies Used
+## 🛠 Technologies Used
 
     HTML5
 
@@ -47,7 +47,7 @@
 
     Bootstrap 4/5
 
-🚀 How to Use
+## 🚀 How to Use
 
     Clone the repository:
 
@@ -64,7 +64,7 @@ Navigate into the project folder:
         Or run it using a live server (VSCode extension or similar)
 
 
-📚 Lessons Learned
+## 📚 Lessons Learned
 
     Learned how to build a full responsive layout using Bootstrap.
 
