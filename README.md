@@ -63,10 +63,7 @@ Navigate into the project folder:
 
         Or run it using a live server (VSCode extension or similar)
 
-🖼 Screenshots
 
-Here are some previews of the website:
-<img src="/assets/Home.png" width="400"> <img src="/assests/Login.png" width="400">
 📚 Lessons Learned
 
     Learned how to build a full responsive layout using Bootstrap.
